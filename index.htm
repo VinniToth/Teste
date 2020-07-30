@@ -30,7 +30,7 @@
                     },
                     onApprove: function(data, actions) {
                         return actions.order.capture().then(function(details) {
-                            alert('Transação aprovada ' + details.payer.name.given_name + '!');
+                            alert('Transação aprovada');
                         });
                     }
                 }).render('#paypal-button-container');
